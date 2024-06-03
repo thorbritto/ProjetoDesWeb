@@ -1,0 +1,237 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0e6e6;
+  /* Cor de fundo cinza */
+}
+
+/* Estilos para o menu */
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(255, 174, 1);
+  border-radius: 10px 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 25%;
+}
+
+.menu li {
+  float: right;
+}
+
+.menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  background-color: #eec409;
+}
+
+/* Estilos para o formulário */
+form {
+  margin: 60px auto 50px;
+  width: 80%;
+  max-width: 600px;
+  /* Definindo uma largura máxima para o formulário */
+  padding: 0 20px;
+  /* Adicionando espaçamento interno */
+}
+
+fieldset {
+  border: 1px solid #dddddd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+legend {
+  font-weight: bold;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input,
+select,
+button {
+  margin-bottom: 10px;
+  width: 100%;
+  /* Definindo a largura dos elementos de formulário como 100% */
+  box-sizing: border-box;
+  /* Mantendo o padding e a borda dentro da largura especificada */
+}
+
+/* Estilos para o formulário */
+form {
+  margin: 60px auto 50px;
+  width: 80%;
+  max-width: 600px; /* Definindo uma largura máxima para o formulário */
+  padding: 0 20px; /* Adicionando espaçamento interno */
+}
+
+fieldset {
+  border: 1px solid #dddddd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+legend {
+  font-weight: bold;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input,
+select,
+button {
+  margin-bottom: 10px;
+  width: 100%; /* Definindo a largura dos elementos de formulário como 100% */
+  box-sizing: border-box; /* Mantendo o padding e a borda dentro da largura especificada */
+}
+
+/* Estilos para a tabela */
+table {
+  border-collapse: collapse;
+  width: 100%; /* A tabela ocupa toda a largura disponível */
+}
+
+table th,
+table td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Estilos para os cabeçalhos h1 e h2 */
+h1,
+h2 {
+  background-color: rgb(255, 174, 1); /* Cor de fundo salmão */
+  color: white; /* Cor do texto branco */
+  padding: 10px; /* Preenchimento interno */
+  border-radius: 10px 10px 10px 10px; /* Borda arredondada no canto inferior */
+  width: 34%; /* Largura dos cabeçalhos */
+}
+
+/* Estilo para o formulário com o tema de saúde */
+.tema-saude {
+  background-color: #d8f3dc;
+  /* Cor de fundo para o tema de saúde */
+  padding: 20px;
+  /* Adicione espaçamento interno ao formulário */
+  border-radius: 10px;
+  /* Adicione bordas arredondadas ao formulário */
+}
+
+.tema-saude fieldset {
+  border: 1px solid #aaa;
+  /* Adicione uma borda ao redor do campo */
+  padding: 10px;
+  /* Adicione espaçamento interno ao campo */
+  margin-bottom: 10px;
+  /* Adicione margem inferior ao campo */
+}
+
+.tema-saude legend {
+  font-weight: bold;
+  /* Torne a legenda em negrito */
+  color: #333;
+  /* Cor do texto da legenda */
+}
+
+.tema-saude label {
+  display: block;
+  /* Faça as etiquetas ocuparem a largura total do seu contêiner */
+  margin-bottom: 5px;
+  /* Adicione margem inferior para separação entre etiquetas e campos */
+}
+
+.tema-saude input,
+.tema-saude select {
+  width: calc(100% - 22px);
+  /* Defina a largura dos campos de entrada para preencher o contêiner com uma pequena margem */
+  padding: 5px;
+  /* Adicione espaçamento interno aos campos de entrada */
+  border: 1px solid #ccc;
+  /* Adicione uma borda aos campos de entrada */
+  border-radius: 5px;
+  /* Adicione bordas arredondadas aos campos de entrada */
+}
+
+.tema-saude button[type="submit"],
+.tema-saude button[type="reset"] {
+  padding: 10px 20px;
+  /* Adicione espaçamento interno aos botões */
+  background-color: #4caf50;
+  /* Cor de fundo verde para botões */
+  color: white;
+  /* Cor do texto dos botões */
+  border: none;
+  /* Remova a borda dos botões */
+  border-radius: 5px;
+  /* Adicione bordas arredondadas aos botões */
+  cursor: pointer;
+  /* Mude o cursor para um ponteiro ao passar sobre os botões */
+}
+
+.tema-saude button[type="submit"]:hover,
+.tema-saude button[type="reset"]:hover {
+  background-color: #45a049;
+  /* Cor de fundo mais escura ao passar sobre os botões */
+}
+
+/* Media queries para tornar o layout responsivo */
+@media screen and (max-width: 768px) {
+  .menu {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu li {
+    float: none;
+    display: inline-block;
+  }
+
+  .menu li a {
+    display: inline-block;
+  }
+}
+
+/* Estilos para o rodapé */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  /* Alterando a posição para relativa */
+  clear: both;
+  /* Limpa os elementos flutuantes */
+}
+
+/* Estilo para a segunda tabela */
+table:nth-of-type(2) {
+  margin-bottom: 100px;
+  /* Aumentando a margem inferior */
+}

@@ -1,0 +1,115 @@
+/* Estilo para garantir que não haja margens ou preenchimentos padrão */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0e6e6;
+  /* Cor de fundo cinza */
+}
+
+/* Estilo para a barra de menu */
+.menu {
+  list-style-type: none;
+  /* Remove os marcadores de lista */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(255, 174, 1);
+  border-radius: 10px 10px;
+  /* Cor de fundo da barra de menu */
+  position: fixed;
+  /* Fixa a barra de menu na tela */
+  top: 0;
+  /* Posiciona a barra de menu no topo da tela */
+  right: 0;
+  /* Posiciona a barra de menu à direita da tela */
+  width: 25%;
+  /* Define a largura da barra de menu */
+}
+
+/* Estilo para os itens da barra de menu */
+.menu li {
+  float: right;
+  /* Alinha os itens à direita */
+}
+
+.menu li a {
+  display: block;
+  color: white;
+  /* Cor do texto dos links */
+  text-align: center;
+  padding: 14px 16px;
+  /* Preenchimento interno dos itens */
+  text-decoration: none;
+  /* Remove o sublinhado dos links */
+}
+
+.menu li a:hover {
+  background-color: #eec409;
+  /* Cor de fundo ao passar o mouse sobre os links */
+}
+
+/* Estilo para a tabela de informações do projeto */
+table {
+  width: 80%;
+  /* Largura da tabela */
+  margin: 60px auto 50px;
+  /* Margens da tabela */
+  border-collapse: collapse;
+  /* Remove as bordas entre as células */
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  /* Borda das células */
+  padding: 8px;
+  /* Preenchimento interno das células */
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  /* Cor de fundo das células de cabeçalho */
+}
+
+/* Estilo para o rodapé */
+footer {
+  background-color: #333;
+  /* Cor de fundo do rodapé */
+  color: white;
+  /* Cor do texto do rodapé */
+  text-align: center;
+  padding: 10px 0;
+  /* Preenchimento interno do rodapé */
+  position: fixed;
+  /* Fixa o rodapé na parte inferior da tela */
+  bottom: 0;
+  /* Posiciona o rodapé no rodapé da tela */
+  width: 100%;
+  /* Largura total do rodapé */
+}
+
+/* Estilos para o h1 */
+h1 {
+  background-color: rgb(255, 174, 1);
+  /* Cor de fundo salmão */
+  color: white;
+  /* Cor do texto branco */
+  padding: 10px;
+  /* Preenchimento interno */
+  border-radius: 10px 10px 10px 10px;
+  /* Borda arredondada no canto inferior */
+  width: 22%;
+}
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-bottom: 100px;
+}
+
+img {
+  width: 500px;
+  height: fit-content;
+}

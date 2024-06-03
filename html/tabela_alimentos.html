@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa de Apoio a Atletas DM1</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/tabeali.css">
+</head>
+
+<body>
+
+    <ul class="menu">
+        <li><a href="/referencia.html">Referências</a></li>
+        <li><a href="/tabela_alimentos.html">Tabela de Alimentos</a></li>
+        <li><a href="/tabela.html">Projeto</a></li>
+        <li><a href="/index.html">Home</a></li>
+    </ul>
+    <div>
+        <h1>Tabela Nutricional Detalhada para Diabéticos Tipo 1</h1>
+        <label for="dietaSelect">Selecione a dieta:</label>
+        <select id="dietaSelect" onchange="changeDieta()">
+            <option value="dieta1">Dieta 1</option>
+            <option value="dieta2">Dieta 2</option>
+        </select>
+
+        <table id="dieta1" class="active">
+            <tr>
+                <th>Alimento</th>
+                <th>Porção</th>
+                <th>Calorias</th>
+                <th>Carboidratos (g)</th>
+                <th>Açúcares (g)</th>
+                <th>Proteínas (g)</th>
+                <th>Gorduras (g)</th>
+                <th>Fibras (g)</th>
+                <th>Sódio (mg)</th>
+                <th>Índice Glicêmico</th>
+            </tr>
+            <tr>
+                <td>Maçã</td>
+                <td>1 unidade média</td>
+                <td>95</td>
+                <td>25</td>
+                <td>19</td>
+                <td>0.5</td>
+                <td>0.3</td>
+                <td>4.4</td>
+                <td>1</td>
+                <td>38</td>
+            </tr>
+            <tr>
+                <td>Peito de Frango Grelhado</td>
+                <td>100g</td>
+                <td>165</td>
+                <td>0</td>
+                <td>0</td>
+                <td>31</td>
+                <td>3.6</td>
+                <td>0</td>
+                <td>74</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Arroz Integral</td>
+                <td>1 xícara cozida</td>
+                <td>218</td>
+                <td>45</td>
+                <td>1</td>
+                <td>5</td>
+                <td>1.6</td>
+                <td>3.5</td>
+                <td>10</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Brócolis</td>
+                <td>1 xícara</td>
+                <td>55</td>
+                <td>11</td>
+                <td>2.2</td>
+                <td>3.7</td>
+                <td>0.6</td>
+                <td>5.1</td>
+                <td>64</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Amêndoas</td>
+                <td>1/4 xícara</td>
+                <td>207</td>
+                <td>7</td>
+                <td>1</td>
+                <td>5</td>
+                <td>18</td>
+                <td>4</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td>1 unidade média</td>
+                <td>105</td>
+                <td>27</td>
+                <td>14</td>
+                <td>1.3</td>
+                <td>0.3</td>
+                <td>3.1</td>
+                <td>1</td>
+                <td>51</td>
+            </tr>
+            <tr>
+                <td>Salmão Grelhado</td>
+                <td>100g</td>
+                <td>206</td>
+                <td>0</td>
+                <td>0</td>
+                <td>22</td>
+                <td>13</td>
+                <td>0</td>
+                <td>59</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Batata Doce</td>
+                <td>1 xícara cozida</td>
+                <td>180</td>
+                <td>41</td>
+                <td>13</td>
+                <td>4</td>
+                <td>0.3</td>
+                <td>6.6</td>
+                <td>72</td>
+                <td>63</td>
+            </tr>
+            <tr>
+                <td>Espinafre</td>
+                <td>1 xícara</td>
+                <td>23</td>
+                <td>3.6</td>
+                <td>0.4</td>
+                <td>2.9</td>
+                <td>0.4</td>
+                <td>2.2</td>
+                <td>24</td>
+                <td>15</td>
+            </tr>
+        </table>
+
+        <table id="dieta2">
+            <tr>
+                <th>Alimento</th>
+                <th>Porção</th>
+                <th>Calorias</th>
+                <th>Carboidratos (g)</th>
+                <th>Açúcares (g)</th>
+                <th>Proteínas (g)</th>
+                <th>Gorduras (g)</th>
+                <th>Fibras (g)</th>
+                <th>Sódio (mg)</th>
+                <th>Índice Glicêmico</th>
+            </tr>
+            <tr>
+                <td>Morango</td>
+                <td>1 xícara</td>
+                <td>49</td>
+                <td>12</td>
+                <td>7</td>
+                <td>1</td>
+                <td>0.5</td>
+                <td>3</td>
+                <td>1</td>
+                <td>41</td>
+            </tr>
+            <tr>
+                <td>Tofu</td>
+                <td>100g</td>
+                <td>76</td>
+                <td>1.9</td>
+                <td>0.3</td>
+                <td>8</td>
+                <td>4.8</td>
+                <td>0.3</td>
+                <td>7</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Quinoa</td>
+                <td>1 xícara cozida</td>
+                <td>222</td>
+                <td>39</td>
+                <td>1.6</td>
+                <td>8</td>
+                <td>3.6</td>
+                <td>5.2</td>
+                <td>13</td>
+                <td>53</td>
+            </tr>
+            <tr>
+                <td>Cenoura</td>
+                <td>1 xícara</td>
+                <td>52</td>
+                <td>12</td>
+                <td>6</td>
+                <td>1.2</td>
+                <td>0.3</td>
+                <td>3.6</td>
+                <td>88</td>
+                <td>47</td>
+            </tr>
+            <tr>
+                <td>Nozes</td>
+                <td>1/4 xícara</td>
+                <td>200</td>
+                <td>4</td>
+                <td>1</td>
+                <td>5</td>
+                <td>20</td>
+                <td>2</td>
+                <td>0</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Pera</td>
+                <td>1 unidade média</td>
+                <td>101</td>
+                <td>27</td>
+                <td>17</td>
+                <td>0.6</td>
+                <td>0.2</td>
+                <td>5.5</td>
+                <td>1</td>
+                <td>38</td>
+            </tr>
+            <tr>
+                <td>Sardinha</td>
+                <td>100g</td>
+                <td>208</td>
+                <td>0</td>
+                <td>0</td>
+                <td>25</td>
+                <td>11</td>
+                <td>0</td>
+                <td>505</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Batata</td>
+                <td>1 xícara cozida</td>
+                <td>116</td>
+                <td>26</td>
+                <td>1.2</td>
+                <td>3</td>
+                <td>0.1</td>
+                <td>2.4</td>
+                <td>13</td>
+                <td>78</td>
+            </tr>
+            <tr>
+                <td>Alface</td>
+                <td>1 xícara</td>
+                <td>5</td>
+                <td>1</td>
+                <td>0.2</td>
+                <td>0.5</td>
+                <td>0.1</td>
+                <td>0.5</td>
+                <td>7</td>
+                <td>15</td>
+            </tr>
+    </div>
+    </table>
+
+    <script>
+        function changeDieta() {
+            const dieta1 = document.getElementById('dieta1');
+            const dieta2 = document.getElementById('dieta2');
+            const select = document.getElementById('dietaSelect');
+            if (select.value === 'dieta1') {
+                dieta1.classList.add('active');
+                dieta2.classList.remove('active');
+            } else {
+                dieta2.classList.add('active');
+                dieta1.classList.remove('active');
+            }
+        }
+    </script>
+    <hr>
+    <h2>Como deve ser a alimentação para atletas com diabetes</h2>
+
+    <p>Muitos atletas com diabetes acabam tendo cuidado redobrado na hora de praticar uma atividade física. Eles temem que haja uma queda do açúcar no sangue.<br>
+        No entanto, tendo uma boa alimentação e monitorando a quantidade que está comendo, é possível manter os níveis de açúcar suficientes no sangue e seguir mantendo o seu desempenho.<br>
+        Basta aprender e se educar sobre como a diabetes afeta a sua vida como atleta e seguir algumas das dicas para controlar a diabetes e obter o que há de melhor dos seus treinos.</p>
+
+    <h2>Como a diabetes afeta os atletas</h2>
+
+    <p>A insulina é responsável por permitir que a glicose entre nas células e sejam usadas por ela para produzir energia. Funciona também promovendo o armazenamento de glicogênio para se recuperar.<br>
+        As pessoas que possuem Diabetes tipo 1 não conseguem produzir a insulina. Por isso, precisam de injeções da mesma.<br>
+        Assim, programar as refeições em relação aos exercícios, junto da terapia com insulina, deve ser levado a sério.<br>
+        Basicamente, é importante ter cuidado nas quantidades de proteína e carboidratos consumidos para treinar com intensidade e ter sucesso na sua atividade física. </p>
+    <h2>Controle o seu açúcar</h2>
+    <p>Sempre faça uma verificação dos açúcares antes de começar a atividade física. O nível normal de glicose no sangue costuma ser de 80mg/dl e 120mg/dll.<br>
+        Caso estejam muito baixos, ou seja, abaixo desses valores, é a hora de fazer um lanche e esperar que haja a digestão antes de começar com a sua atividade.<br>
+        Os atletas que enfrentam a diabetes precisam sempre ter alimentos ricos em carboidratos, como frutas, barras de granola, balas, para poder manter o nível de açúcar no sangue. </p>
+    <h2>Programe suas refeições</h2>
+    <p>Para quem tem diabetes, tudo o que você come é muito importante, mas também quando irá comer.<br>
+        Pular refeições ou ficar muito tempo sem se alimentar pode acabar fazendo com que o açúcar no sangue caia e depois tenha um aumento muito rápido.<br>
+        Assim, faça uma refeição ou lanche rico em carboidrato, pelo menos, duas ou três horas antes do exercício.<br>
+        Caso o treinamento tenha duração maior do que uma hora, planeje levar um lanche ou uma bebida esportiva com calorias para consumir durante o treino.<br>
+        Depois de finalizado, coma algo que tenha carboidratos e proteína para que o açúcar não caia. Verifique como estão os níveis de açúcar depois da atividade para saber que estão na medida certa. </p>
+
+    <h2>Contando Carboidratos</h2>
+    <p>Os carboidratos são a principal fonte de açúcar dos alimentos e são quem entrega energia para os nossos corpos.<br>
+        Comer muito ou pouco pode afetar a quantidade de açúcar no sangue, ou seja, vai afetar o seu desempenho.<br>
+        Ao ter controle sobre a quantidade de carboidratos que consome em cada lanche e refeição, fica mais fácil de equilibrar o resto do seu prato com proteínas e gorduras saudáveis. </p>
+    <h2>Não se esqueça de beber água</h2>
+    <p>Perder fluidos pode acabar impedindo o seu bom desempenho. Ou seja, para evitar a desidratação, beba bastante água para corresponder a quantidade de suor.<br>
+        Manter a hidratação é bem importante para manter o seu desempenho ao máximo durante o treinamento. </p><br>
+</body>
+<footer>
+    <p>Programa de Apoio a Atletas DM1 © 2024 Todos os direitos reservados.</p>
+</footer>
+
+</html>

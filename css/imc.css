@@ -1,0 +1,37 @@
+#imc {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+
+.resp {
+  background-color: rgb(202, 241, 193);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-right: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 250px;
+  height: 250px;
+}
+
+.deleteBtn {
+  width: 100px;
+  border-radius: 12px;
+  margin-top: 30px;
+  background-color: #4caf50;
+  color: white;
+  padding: 6px 0;
+  opacity: 1;
+  transition: 0.4s ease;
+}
+
+.deleteBtn:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}

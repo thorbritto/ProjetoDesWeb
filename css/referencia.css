@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0e6e6;
+  /* Cor de fundo cinza */
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(255, 174, 1);
+  border-radius: 10px 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 25%;
+}
+
+.menu li {
+  float: right;
+}
+
+.menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  background-color: #eec409;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.container {
+  margin: 60px auto 50px;
+  /* Margens do conteúdo */
+  width: 80%;
+  /* Largura do conteúdo */
+}
+
+.reference {
+  margin-bottom: 20px;
+  /* Margem inferior das referências */
+}
+h1 {
+  background-color: rgb(255, 174, 1);
+  /* Cor de fundo salmão */
+  color: white;
+  /* Cor do texto branco */
+  padding: 10px;
+  /* Preenchimento interno */
+  border-radius: 10px 10px 10px 10px;
+  /* Borda arredondada no canto inferior */
+  width: 14%;
+  position: static;
+  left: 50px;
+  top: auto;
+}
